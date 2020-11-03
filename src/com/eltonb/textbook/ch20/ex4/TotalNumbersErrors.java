@@ -19,11 +19,11 @@ public class TotalNumbersErrors {
     }
 
     // calculate total of ArrayList elements
-    public static <T extends Number >double sum(ArrayList<T> list) {
+    public static double sum(ArrayList<Number> list) {
         double total = 0; // initialize total
 
         // calculate sum
-        for (T element : list)
+        for (Number element : list)
             total += element.doubleValue();
 
         return total;

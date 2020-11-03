@@ -66,39 +66,6 @@ public class NonGenericApp {
         display(integers);
     }
 
-    private void playWithNonGeneric() {
-        AJList<Integer> integers = new AJSingleLinkedList<>();
-        for (int i = 0; i < 5; i++) {
-            integers.add(i);
-        }
-
-        display(integers);
-        integers.remove(0);
-        display(integers);
-        integers.remove(2);
-        display(integers);
-        integers.remove(2);
-        display(integers);
-        integers.remove(0);
-        display(integers);
-        integers.remove(0);
-        display(integers);
-
-        //will throw an exception
-        integers.remove(0);
-        display(integers);
-    }
-
-    private <T> void display(AJList<T> list) {
-        StringBuilder sb = new StringBuilder("List contains: ");
-        AJListIterator<T> it = list.iterator();
-        while (it.hasNext()) {
-            sb.append(it.next());
-            sb.append(" ");
-        }
-        System.out.println(sb.toString());
-    }
-
     private void display(IntegerList ints) {
         StringBuilder sb = new StringBuilder("List contains: ");
         IntegerListIterator it = ints.iterator();

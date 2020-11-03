@@ -32,7 +32,7 @@ public class Ex2GenericMethodTest {
             System.out.printf("%s ", element);
 
         System.out.println();
-    } 
+    }
 
     /*
     public static void printArray(Object[] inputArray) {
